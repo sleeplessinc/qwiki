@@ -20,8 +20,8 @@
 	t = t.replace(/\n((\s+-\s+[^\n]+\n)+)/g, "\n<ul>\n$1\n</ul>");
 	t = t.replace(/\n\s+-\s+/g, "\n<li>");
 	t = t.replace(/-{4,}/g, "<hr>");
-	t = t.replace(/-{3,}/g, "&mdash;");
-	t = t.replace(/-{2,}/g, "&ndash;");
+	t = t.replace(/-{3}/g, "&mdash;");
+	t = t.replace(/-{2}/g, "&ndash;");
 	e.innerHTML = t;
 })()
 
