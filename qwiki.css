@@ -11,6 +11,6 @@ div.code {
 	white-space: pre;
 }
 span.note {
-	background: #ffa;
-	border: solid 1px #aa7;
+	font-style: italic;
+	color: blue;
 }
