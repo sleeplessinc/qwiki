@@ -4,6 +4,8 @@ body, td {
 	padding: 0;
 }
 div.code {
-	background: #def;
 	padding: 1em;
+	background: #eee;
+	margin: 1em;
+	border: solid 1px #ccc;
 }
