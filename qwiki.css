@@ -1,5 +1,7 @@
 body, td {
 	font-family: helvetica;
+	margin: 2%;
+	padding: 0;
 }
 code {
 	background: #def;
