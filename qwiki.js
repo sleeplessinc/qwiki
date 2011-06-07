@@ -23,7 +23,9 @@
 	t = t.replace(/-{3}/g, "&mdash;");
 	t = t.replace(/-{2}/g, "&ndash;");
 
-	var $$ = $("div.code")
+	var $$ = $("div.code").each(function(i,o) {
+		$(o).html($(o).html().replace(/\n/g, "<br>\n"))
+	});
 	$$.html($$.html().replace(/\n/g, "<br>\n"))
 
 	e.innerHTML = t;
