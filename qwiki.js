@@ -22,11 +22,6 @@
 	t = t.replace(/-{4,}/g, "<hr>");
 	t = t.replace(/-{3}/g, "&mdash;");
 	t = t.replace(/-{2}/g, "&ndash;");
-
-	$("div.code").each(function(i,o) {
-		$(o).html($(o).html().replace(/\n/g, "<br>\n"))
-	});
-
 	e.innerHTML = t;
 })()
 
