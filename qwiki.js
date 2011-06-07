@@ -8,7 +8,7 @@
 	t = t.replace(/\+([1-9])([^1-9][^\n]+)\n/g, "<h$1>$2</h$1><p>\n");
 	t = t.replace(/\^\^([^\^]+)\^\^/g, "<a href=\"$1\">$1</a>\n");
 	t = t.replace(/__(([^_]|_[^_])*)__/g, "<u>$1</u>");		// underline
-	t = t.replace(/\(\((([^_]|_[^_])*)\)\)/g, "<div class=note>$1</div>");		// note
+	t = t.replace(/\(\((([^)]|\)[^)])*)\)\)/g, "<div class=note>$1</div>");		// note
 	t = t.replace(/\*\*(([^\*]|\*[^\*])*)\*\*/g, "<b>$1</b>");
 	t = t.replace(/([^:])\/\/([^\/]*)\/\//g, "$1<i>$2</i>");
 	t = t.replace(/{{/g, "<div class=code>");
