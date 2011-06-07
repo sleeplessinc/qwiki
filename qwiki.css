@@ -3,7 +3,7 @@ body, td {
 	margin: 3%;
 	padding: 0;
 }
-pre {
+div.code {
 	background: #def;
 	padding: 1em;
 }
