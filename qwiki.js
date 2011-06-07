@@ -10,8 +10,8 @@
 	t = t.replace(/__(([^_]|_[^_])*)__/g, "<u>$1</u>");		// underline
 	t = t.replace(/\*\*(([^\*]|\*[^\*])*)\*\*/g, "<b>$1</b>");
 	t = t.replace(/([^:])\/\/([^\/]*)\/\//g, "$1<i>$2</i>");
-	t = t.replace(/{{/g, "<code>");
-	t = t.replace(/}}/g, "</code>");
+	t = t.replace(/{{/g, "<div class=code>");
+	t = t.replace(/}}/g, "</div>");
 	t = t.replace(/\(tm\)/g, "&trade;");
 	t = t.replace(/\(r\)/g, "&reg;");
 	t = t.replace(/\(c\)/g, "&copy;");
