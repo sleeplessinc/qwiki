@@ -6,7 +6,7 @@
 	t = t.replace(/\n\s+\n/g, "\n\n");
 	t = t.replace(/\n\n+/g, "<p>\n");
 	t = t.replace(/\+([1-9])([^1-9][^\n]+)\n/g, "<h$1>$2</h$1><p>\n");
-	t = t.replace(/\^\^([^\^]+)\^\^/g, "<a href=\"$1\">$1</a>\n");
+	t = t.replace(/\^\^([^\^,]+)(|\,([^\^]+))\^\^/g, "<a href=\"$1\">$3</a>\n");
 	t = t.replace(/__(([^_]|_[^_])*)__/g, "<u>$1</u>");		// underline
 	t = t.replace(/\(\((([^)]|\)[^)])*)\)\)/g, "<span class=note>$1</span>");		// note
 	t = t.replace(/\*\*(([^\*]|\*[^\*])*)\*\*/g, "<b>$1</b>");

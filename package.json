@@ -1,0 +1,18 @@
+
+{
+  "name": "qwiki",
+  "version": "1.0.0",
+  "description": "Simple markup language parsed in a web page with JS and regular expressions.  Similar to Markdown but doesn't need to be translated prior to being delivered to the browser.",
+  "author": "Joe Hitchens <joe@sleepless.com> (sleepless.com)",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/sleeplessinc/qwiki/raw/master/LICENSE"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://sleeplessinc@github.com/sleeplessinc/qwiki.git"
+    }
+  ],
+  "repository": "git://github.com/sleeplessinc/qwiki.git"
+}
